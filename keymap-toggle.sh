@@ -13,9 +13,9 @@ fi
 
 if [ "$layout" = "$target_layout" ]
 then
-	setxkbmap eu
-	notify-send "Using eu keymap"
+  setxkbmap eu
+  notify-send "Using eu keymap"
 else
-	setxkbmap "$target_layout"
-	notify-send "Using $target_layout keymap"
+  setxkbmap "$target_layout"
+  notify-send "Using $target_layout keymap"
 fi

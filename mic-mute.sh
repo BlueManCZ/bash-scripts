@@ -13,5 +13,5 @@ if [ "$STATUS" = yes ]
 then
   if [ "$1" ]; then mpv "$1"; fi
 else
-	if [ "$2" ]; then mpv "$2"; fi
+  if [ "$2" ]; then mpv "$2"; fi
 fi
