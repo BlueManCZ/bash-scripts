@@ -1,8 +1,11 @@
 #!/bin/bash
 
+# Auto-connect single bluetooth device.
+# Pass MAC address of the target device as an only argument.
+
 MAC=$1
 
-if [ ! ${MAC} ]; then
+if [ ! "${MAC}" ]; then
     echo "Please pass MAC address as an argument."
     exit
 fi
@@ -18,7 +21,7 @@ connected() {
 while true
 do
     sleep 1
-    if [ $(powered) = yes ] && [ $(connected) = no ]; then
+    if [ "$(powered)" = yes ] && [ "$(connected)" = no ]; then
         echo "connect ${MAC}" | bluetoothctl
         sleep 5
     fi

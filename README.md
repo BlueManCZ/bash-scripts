@@ -1,1 +1,1 @@
-# bash-scripts
+My personal collection of shell scripts.
